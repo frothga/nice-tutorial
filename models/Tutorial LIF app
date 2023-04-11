@@ -1,0 +1,38 @@
+N2A.schema=3
+$meta
+ id:11f187712f463000
+Input
+ $inherit:Spike Generator Poisson
+  $meta
+   id:166b5f18573a49ac
+ $meta
+  gui
+   bounds
+    x:5.55
+    y:10.64
+ averageRate:10Hz
+LIF
+ $inherit:Cell LIF
+  $meta
+   id:166b015ccda9c699
+ $meta
+  gui
+   bounds
+    x:30.82
+    y:10.64
+ spike
+  $meta
+   watch:
+Synapse
+ $inherit:Synapse Exponential
+  $meta
+   id:166b015ccdaa8211
+ $meta
+  gui
+   bounds
+    x:18.09
+    y:10.64
+ A:Input
+ B:LIF
+ E:35mV
+ Gmax:30nS

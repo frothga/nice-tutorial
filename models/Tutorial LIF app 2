@@ -1,0 +1,40 @@
+N2A.schema=3
+$meta
+ id:11f18771b9b8e702
+Input
+ $inherit:Spike Generator Poisson
+  $meta
+   id:166b5f18573a49ac
+ $meta
+  gui
+   bounds
+    x:5.55
+    y:10.64
+ averageRate:10Hz
+LIF
+ $inherit:Tutorial LIF
+  $meta
+   id:11f18771b3d40001
+ $meta
+  gui
+   bounds
+    x:30.82
+    y:10.64
+ Vreset
+  $kill:
+ fire
+  $meta
+   watch:
+Synapse
+ $inherit:Synapse Voltage Step
+  $meta
+   id:166b015ccdaafc99
+ $meta
+  gui
+   bounds
+    x:18.09
+    y:10.64
+ A:Input
+ B:LIF
+ I
+  $kill:
