@@ -1,0 +1,8 @@
+N2A.schema=3
+$inherit:Tutorial A
+ $meta
+  id:11f18780eb9a940b
+$meta
+ id:11f18780ebe19b0c
+brad:2
+craig:17

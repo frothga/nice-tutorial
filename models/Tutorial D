@@ -1,0 +1,7 @@
+N2A.schema=3
+$inherit:Tutorial B, Tutorial C
+ $meta
+  id:11f18780ebe19b0c,11f18780ecb0770d
+$meta
+ id:11f18780ed50a70e
+doug:4

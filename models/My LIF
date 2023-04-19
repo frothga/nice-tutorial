@@ -1,0 +1,12 @@
+N2A.schema=3
+$meta
+ id:11f1878181126102
+C:1uF
+V:+
+ @:V*(1-decay)
+ @fire  ||  $init:0
+Vspike:30mV
+decay:0
+fire:V>=Vspike
+scale:30mV
+spike:fire

@@ -1,0 +1,60 @@
+N2A.schema=3
+$inherit:Brick
+ $meta
+  id:11f1705a7b029d00
+$meta
+ id:11f18780ba08fb06
+complete1
+ $inherit:Fugu Synapse
+  $meta
+   id:11f1703c04c20e01
+ $meta
+  gui
+   bounds
+    x:13.68
+    y:10.53
+   pin:input1
+    topic:complete
+ B:complete
+complete2
+ $inherit:Fugu Synapse
+  $meta
+   id:11f1703c04c20e01
+ $meta
+  gui
+   bounds
+    x:13.58
+    y:15
+   pin:input2
+    topic:complete
+ B:complete
+operand1
+ $inherit:Fugu Synapse
+  $meta
+   id:11f1703c04c20e01
+ $meta
+  gui
+   bounds
+    x:14.58
+    y:20.42
+   pin:input1
+ $p:A.$index==B.$index
+ B:output
+ B.$n:<A.$n
+ weight:0.75
+operand2
+ $inherit:Fugu Synapse
+  $meta
+   id:11f1703c04c20e01
+ $meta
+  gui
+   bounds
+    x:14.26
+    y:24.89
+   pin:input2
+ $p:A.$index==B.$index
+ B:output
+ B.$n:<A.$n
+ weight:0.75
+output
+ $n:<1000000

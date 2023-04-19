@@ -1,0 +1,56 @@
+N2A.schema=3
+$meta
+ id:11f187818dbdcf04
+Input Synapses
+ $inherit:Synapse Exponential
+  $meta
+   id:166b015ccdaa8211
+ $meta
+  gui
+   bounds
+    x:3.79
+    y:9.37
+ $p:A.$index==B.$index
+ A:Inputs
+ B:Neurons
+ Gmax:5nS
+Inputs
+ $inherit:Spike Generator Poisson
+  $meta
+   id:166b5f18573a49ac
+ $meta
+  gui
+   bounds
+    x:2.26
+    y:3
+ $n:countExcitatory
+ averageRate:1Hz
+Neurons
+ $inherit:Cell LIF
+  $meta
+   id:166b015ccda9c699
+ $meta
+  gui
+   bounds
+    x:21.32
+    y:3
+ $n:count
+ excitatory:$index<countExcitatory
+Synapses
+ $inherit:Synapse Exponential
+  $meta
+   id:166b015ccdaa8211
+ $meta
+  gui
+   bounds
+    x:24.32
+    y:9.21
+ $p:
+  @$connect:0
+  @$connect && $t==0 && A.excitatory && B.excitatory:pEE
+ A:Neurons
+ B:Neurons
+ Gmax:5nS
+ pEE:0.5
+count:1000
+countExitatory:floor(count*0.8)

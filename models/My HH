@@ -1,0 +1,23 @@
+N2A.schema=3
+$meta
+ id:11f1878168b8e901
+HH
+ $inherit:Cell Hodgkin-Huxley
+  $meta
+   id:166b015ccda6e28b
+ $meta
+  gui
+   bounds
+    x:28.47
+    y:5.84
+p0
+ $inherit:Coupling
+  $meta
+   id:166b015ccda56f33
+ $meta
+  gui
+   bounds
+    x:9.84
+    y:6.05
+ A:HH
+ B:HH

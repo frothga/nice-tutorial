@@ -1,0 +1,60 @@
+N2A.schema=3
+$meta
+ id:11f1878072382601
+p0
+ $inherit:Tutorial AND
+  $meta
+   id:11f1878065830800
+ $meta
+  gui
+   bounds
+    x:32
+    y:9.58
+   pin
+    in
+     operand1
+      bind:p2
+       pin:output
+     operand2
+      bind:p3
+       pin:output
+p1
+ $inherit:Output
+  $meta
+   id:11f173afa0c5ac00
+ $meta
+  gui
+   bounds
+    x:56.84
+    y:6.26
+   pin
+    in
+     input1:
+      bind:p2
+       pin:output
+     input2:
+      bind:p0
+       pin:output
+     input3:
+      bind:p3
+       pin:output
+p2
+ $inherit:InputVector
+  $meta
+   id:11f172765ebb5800
+ $meta
+  gui
+   bounds
+    x:7.26
+    y:2.32
+ spikes:~[1,1,0,0,1; 1,1,1,0,0; 0,1,0,1,0]
+p3
+ $inherit:InputVector
+  $meta
+   id:11f172765ebb5800
+ $meta
+  gui
+   bounds
+    x:6.63
+    y:17.79
+ spikes:~[1,0,0,1,1; 0,0,1,1,1; 0,1,0,1,0]

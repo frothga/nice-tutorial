@@ -1,0 +1,10 @@
+N2A.schema=3
+$meta
+ id:11f18780d837900a
+$n:3
+$p:$t<500ms
+$t':1ms
+V:1@$init
+V':V/tau
+tau:$index*50ms
+x0:output(V)

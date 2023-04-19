@@ -1,0 +1,69 @@
+N2A.schema=3
+$inherit:Fugu Application
+ $meta
+  id:11f1878076bf2602
+$meta
+ backend:fugu
+  fugu
+   target:lava
+  lava
+   config:sw2
+ host:lava
+ id:11f18780c8e81008
+p0
+ $inherit:My Fugu Brick
+  $meta
+   id:11f18780ba08fb06
+ $meta
+  gui
+   bounds
+    x:23.89
+    y:5.79
+   pin
+    in
+     input1
+      bind:p2
+       pin:output
+     input2
+      bind:p3
+       pin:output
+p1
+ $inherit:Output
+  $meta
+   id:11f173afa0c5ac00
+ $meta
+  gui
+   bounds
+    x:45.95
+    y:3.68
+   pin
+    in
+     input1:
+      bind:p2
+       pin:output
+     input2:
+      bind:p0
+       pin:output
+     input3:
+      bind:p3
+       pin:output
+p2
+ $inherit:InputVector
+  $meta
+   id:11f172765ebb5800
+ $meta
+  gui
+   bounds
+    x:6.21
+    y:0.89
+ spikes:~[1,1,0,0,1; 1,1,1,0,0; 0,1,0,1,0]
+p3
+ $inherit:InputVector
+  $meta
+   id:11f172765ebb5800
+ $meta
+  gui
+   bounds
+    x:5.21
+    y:10.74
+ spikes:~[1,0,0,1,1; 0,0,1,1,1; 0,1,0,1,0]
